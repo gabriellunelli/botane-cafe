@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10120d" />
+    <meta name="description" content="Botané Deli e Café: comida de raiz, ingredientes da estação e experiências feitas com coração, alma e ousadia em Blumenau." />
+    <title>Botané — comida de verdade, histórias à mesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Botané Deli e Café — página inicial">
+        <svg class="brand__sprig" viewBox="0 0 42 48" aria-hidden="true"><path d="M21 42V13m0 17C9 30 6 22 8 14c9 1 14 7 13 16Zm0-8c0-9 6-15 15-16 1 9-4 15-15 16Zm0 20c-1-8-6-12-13-13m13 13c2-7 7-10 14-11" /></svg>
+        <span class="brand__name">Botané</span>
+        <span class="brand__descriptor">DELI &amp; CAFÉ</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="main-navigation" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal" data-navigation>
+        <a class="is-current" href="index.html" aria-current="page">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="#experiencia">Sobre</a>
+        <a href="#catering">Catering</a>
+        <a href="#visite">Contato</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5547992079897" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="1.5"/><path d="M7.5 3v4M16.5 3v4M4 9.5h16M8 13h3M8 16h7"/></svg>
+        <span>Converse com<br />o Botané</span>
+      </a>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero__flower" src="public/images/hero-flower.jpg" alt="" aria-hidden="true" />
+        <div class="hero__ambient" aria-hidden="true"></div>
+        <div class="hero__media">
+          <img src="public/images/hero-dessert.jpg" alt="Bolo artesanal com frutas vermelhas e flores comestíveis" fetchpriority="high" />
+          <span class="hero__media-caption">Feito com o que a estação oferece</span>
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow">DELI · CAFÉ · COMIDA DE RAIZ</p>
+          <h1 id="hero-title">Comida de<br />verdade.<br /><em>Histórias à mesa.</em></h1>
+          <span class="fine-rule" aria-hidden="true"></span>
+          <p class="hero__intro">Sabores da estação, ingredientes locais<br class="desktop-break" /> e experiências que ficam na memória.</p>
+          <a class="button button--outline" href="cardapio.html">Conheça nosso cardápio <span aria-hidden="true">→</span></a>
+        </div>
+        <a class="scroll-cue" href="#experiencia" aria-label="Role para descobrir"><span class="scroll-cue__mouse" aria-hidden="true"></span><span>Role para<br />descobrir</span></a>
+        <span class="hero__index" aria-hidden="true">01 <i></i> 06</span>
+      </section>
+
+      <section class="experience" id="experiencia" aria-labelledby="experience-title">
+        <div class="experience__photo"><img src="public/images/cafe-interior.jpg" alt="Interior acolhedor do Botané, com luz quente, plantas e mesas postas" loading="lazy" /></div>
+        <div class="experience__copy">
+          <p class="eyebrow">UMA EXPERIÊNCIA ÚNICA</p>
+          <h2 id="experience-title">Um lugar para<br />desacelerar.</h2>
+          <p>Café, almoço, confeitaria e momentos especiais em um ambiente acolhedor, cheio de personalidade.</p>
+          <a class="text-link" href="#manifesto">Descubra o Botané <span aria-hidden="true">→</span></a>
+          <svg class="experience__leaf" viewBox="0 0 190 220" aria-hidden="true"><path d="M82 206C86 137 111 80 176 18M91 169C40 171 22 144 19 112c40-4 65 14 72 57Zm22-59c-4-41 16-67 54-81 11 38-6 68-54 81Zm-7 56c30-4 51 9 61 35-28 12-50 0-61-35Z"/></svg>
+        </div>
+      </section>
+
+      <section class="menu-preview section-wrap" aria-labelledby="menu-preview-title">
+        <div class="menu-preview__intro">
+          <p class="eyebrow">NOSSO CARDÁPIO</p>
+          <h2 id="menu-preview-title">Feito com o que<br />a estação oferece.</h2>
+          <p>Produtos frescos, sabores autorais e receitas que mudam com o tempo.</p>
+          <a class="button button--outline" href="cardapio.html">Explorar cardápio completo <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="category-cards">
+          <a class="category-card" href="cardapio.html#confeitaria"><img src="public/images/menu-croissant.jpg" alt="Croissant dourado" loading="lazy" /><span class="category-card__name">Confeitaria</span><span class="category-card__caption">Pães, bolos e doces</span></a>
+          <a class="category-card" href="cardapio.html#almoco"><img src="public/images/menu-lunch.jpg" alt="Prato fresco com folhas e vegetais" loading="lazy" /><span class="category-card__name">Almoço</span><span class="category-card__caption">Pratos da estação</span></a>
+          <a class="category-card" href="cardapio.html#cafes"><img src="public/images/menu-coffee.jpg" alt="Café com desenho de latte art" loading="lazy" /><span class="category-card__name">Cafés</span><span class="category-card__caption">Para acompanhar</span></a>
+          <a class="category-card" href="cardapio.html#especialidades"><img src="public/images/menu-cake.jpg" alt="Fatia de bolo artesanal" loading="lazy" /><span class="category-card__name">Especialidades</span><span class="category-card__caption">Sabores da casa</span></a>
+        </div>
+        <span class="section-ornament section-ornament--menu" aria-hidden="true"></span>
+      </section>
+
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="manifesto__portrait"><img src="public/images/chef-josie.jpg" alt="Chef Josie prepara uma receita artesanal" loading="lazy" /><span class="manifesto__portrait-caption">Da cozinha da chef Josie</span></div>
+        <div class="manifesto__copy">
+          <p class="eyebrow">NOSSO MANIFESTO</p>
+          <h2 id="manifesto-title">Comida com coração,<br />alma e ousadia.</h2>
+          <p>Depois de mais de 16 anos cozinhando em outros países, a chef Josie Franke Gessner voltou às suas raízes para compartilhar o sabor da comida de verdade.</p>
+          <a class="text-link" href="https://botanedeliecafe.com.br/" target="_blank" rel="noreferrer">Conheça a história da chef <span aria-hidden="true">→</span></a>
+          <span class="manifesto__signature">com carinho, Josie</span>
+        </div>
+        <div class="manifesto__botanical"><img src="public/images/botanical-detail.jpg" alt="Composição botânica com flores em tons vinho e folhas" loading="lazy" /></div>
+      </section>
+
+      <section class="catering" id="catering" aria-labelledby="catering-title">
+        <div class="catering__photo"><img src="public/images/catering-table.jpg" alt="Mesa de evento preparada com flores e louças" loading="lazy" /></div>
+        <div class="catering__panel">
+          <p class="eyebrow">CATERING</p>
+          <h2 id="catering-title">Botané à sua mesa.<br />E no seu evento.</h2>
+          <p>Menus sob medida, louças, decoração e cuidado em cada detalhe para encontros memoráveis.</p>
+          <a class="text-link" href="https://wa.me/5547992079897?text=Olá%2C%20quero%20conversar%20sobre%20catering." target="_blank" rel="noreferrer">Solicitar uma proposta <span aria-hidden="true">→</span></a>
+        </div>
+        <span class="catering__seal" aria-hidden="true">BOTANÉ<br /><small>feito à mão</small></span>
+      </section>
+
+      <section class="visit" id="visite" aria-labelledby="visit-title">
+        <img class="visit__flower" src="public/images/footer-flower.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <div class="visit__heading"><p class="eyebrow">VISITE-NOS</p><h2 id="visit-title">Uma mesa está<br />esperando por você.</h2></div>
+        <div class="visit__details">
+          <div class="visit__detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></svg>
+            <p>Rua Frederico Jensen, 1030<br />Sala 6 e 7 · Itoupavazinha<br />Blumenau — SC</p>
+          </div>
+          <div class="visit__detail">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6.5v5.8l4 2.2"/></svg>
+            <p>Terça a sexta · 9h30 às 18h<br />Sábado · 9h às 18h30<br /><small>Confirme os horários em feriados.</small></p>
+          </div>
+          <div class="visit__socials"><a href="https://instagram.com/botanedeliecafe" target="_blank" rel="noreferrer" aria-label="Instagram da Botané">Instagram <span aria-hidden="true">↗</span></a><a href="https://wa.me/5547992079897" target="_blank" rel="noreferrer" aria-label="WhatsApp da Botané">WhatsApp <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <a class="button button--cream" href="https://wa.me/5547992079897" target="_blank" rel="noreferrer">Fale com o Botané <span aria-hidden="true">→</span></a>
+        <div class="visit__emblem" aria-hidden="true"><svg viewBox="0 0 90 100"><path d="M45 89V14m0 47C24 61 18 48 21 34c15 2 24 12 24 27Zm0-20c0-16 11-26 26-28 2 15-7 26-26 28Zm0 48c-2-15-12-23-25-24m25 24c3-13 13-20 26-22"/></svg></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html">Botané <span>DELI · CAFÉ · COMIDA DE RAIZ</span></a>
+      <p>Botané Deli e Café <span>·</span> Blumenau, SC</p>
+      <a class="footer-email" href="mailto:info@botanedeliecafe.com.br">info@botanedeliecafe.com.br</a>
+      <span class="footer-rule" aria-hidden="true"></span>
+      <a class="footer-top" href="#conteudo">Voltar ao início ↑</a>
+    </footer>
+  </body>
+</html>

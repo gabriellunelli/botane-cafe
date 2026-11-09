@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10120d" />
+    <meta name="description" content="Explore o cardápio sazonal da Botané Deli e Café. Os valores e sugestões desta página são demonstrativos." />
+    <title>Cardápio da estação — Botané Deli &amp; Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body class="menu-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header site-header--solid" data-header>
+      <a class="brand" href="index.html" aria-label="Botané Deli e Café — página inicial">
+        <svg class="brand__sprig" viewBox="0 0 42 48" aria-hidden="true"><path d="M21 42V13m0 17C9 30 6 22 8 14c9 1 14 7 13 16Zm0-8c0-9 6-15 15-16 1 9-4 15-15 16Zm0 20c-1-8-6-12-13-13m13 13c2-7 7-10 14-11" /></svg>
+        <span class="brand__name">Botané</span><span class="brand__descriptor">DELI &amp; CAFÉ</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="main-navigation" data-menu-toggle><span></span><span></span></button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal" data-navigation>
+        <a href="index.html">Início</a><a class="is-current" href="cardapio.html" aria-current="page">Cardápio</a><a href="index.html#experiencia">Sobre</a><a href="index.html#catering">Catering</a><a href="index.html#visite">Contato</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5547992079897" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="1.5"/><path d="M7.5 3v4M16.5 3v4M4 9.5h16M8 13h3M8 16h7"/></svg><span>Converse com<br />o Botané</span></a>
+    </header>
+
+    <main id="conteudo" class="menu-main">
+      <section class="menu-hero" aria-labelledby="menu-title">
+        <div class="menu-hero__copy"><p class="eyebrow">SABORES DA ESTAÇÃO · BLUMENAU, SC</p><h1 id="menu-title">À mesa,<br /><em>com tempo.</em></h1><p>Receitas de raiz, ingredientes locais e novidades que acompanham a estação.</p></div>
+        <div class="menu-hero__image"><img src="public/images/hero-dessert.jpg" alt="Bolo da estação com frutas vermelhas frescas" /><span>Uma estação de cada vez</span></div>
+        <span class="menu-hero__number" aria-hidden="true">BOTANÉ · MENU Nº 01</span>
+      </section>
+
+      <div class="menu-note"><span class="menu-note__icon" aria-hidden="true">✳</span><p><strong>Cardápio demonstrativo.</strong> O site oficial não publica os preços atuais; nomes de pratos e valores abaixo são exemplos visuais, não representam o menu ou preços vigentes. Os itens reais variam conforme a estação e disponibilidade.</p><a href="https://wa.me/5547992079897?text=Olá%2C%20pode%20me%20enviar%20o%20cardápio%20atual%3F" target="_blank" rel="noreferrer">Consulte o menu atual <span aria-hidden="true">↗</span></a></div>
+
+      <nav class="menu-categories" aria-label="Categorias do cardápio" data-menu-filters>
+        <button class="is-active" type="button" data-filter="all" aria-pressed="true">Tudo</button>
+        <button type="button" data-filter="cafes" aria-pressed="false">Cafés &amp; bebidas</button>
+        <button type="button" data-filter="confeitaria" aria-pressed="false">Confeitaria</button>
+        <button type="button" data-filter="brunch" aria-pressed="false">Brunch</button>
+        <button type="button" data-filter="almoco" aria-pressed="false">Almoço</button>
+        <button type="button" data-filter="especialidades" aria-pressed="false">Especialidades</button>
+        <button type="button" data-filter="catering-menu" aria-pressed="false">Catering</button>
+      </nav>
+
+      <div class="menu-sections" data-menu-sections>
+        <section class="menu-section" id="cafes" data-category="cafes" aria-labelledby="cafes-title">
+          <div class="menu-section__heading"><span class="menu-section__no">01</span><div><p class="eyebrow">PARA DESPERTAR</p><h2 id="cafes-title">Cafés &amp; bebidas</h2></div><p class="menu-section__note">Um convite a ficar mais um pouco.</p></div>
+          <div class="menu-items">
+            <article class="menu-item menu-item--photo"><img src="public/images/menu-coffee.jpg" alt="Café com latte art" loading="lazy" /><div class="menu-item__body"><div class="menu-item__title"><h3>Café coado da casa</h3><span>R$ 12*</span></div><p>Uma xícara de café fresco para acompanhar o momento.</p><small>Exemplo demonstrativo</small></div></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Cappuccino Botané</h3><span>R$ 18*</span></div><p>Espresso e leite vaporizado, finalizado com delicadeza.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Chá da estação</h3><span>R$ 14*</span></div><p>Infusão aromática escolhida para os dias da estação.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Chocolate quente</h3><span>R$ 19*</span></div><p>Uma pausa cremosa para acompanhar a confeitaria.</p><small>Exemplo demonstrativo</small></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="confeitaria" data-category="confeitaria" aria-labelledby="confeitaria-title">
+          <div class="menu-section__heading"><span class="menu-section__no">02</span><div><p class="eyebrow">DA VITRINE</p><h2 id="confeitaria-title">Confeitaria &amp; doces</h2></div><p class="menu-section__note">Feitos para saborear aqui ou levar.</p></div>
+          <div class="menu-items">
+            <article class="menu-item menu-item--photo"><img src="public/images/menu-croissant.jpg" alt="Croissant artesanal" loading="lazy" /><div class="menu-item__body"><div class="menu-item__title"><h3>Croissant artesanal</h3><span>R$ 16*</span></div><p>Massa folhada e dourada, feita para uma pausa sem pressa.</p><small>Exemplo demonstrativo</small></div></article>
+            <article class="menu-item menu-item--photo"><img src="public/images/menu-cake.jpg" alt="Fatia de bolo artesanal" loading="lazy" /><div class="menu-item__body"><div class="menu-item__title"><h3>Bolo de farinha de amêndoas</h3><span>R$ 19*</span></div><p>Um dos exemplos de confeitaria citado no site oficial.</p><small>Exemplo demonstrativo</small></div></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Torta da estação</h3><span>R$ 21*</span></div><p>Frutas da época em uma receita artesanal.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Cookie da casa</h3><span>R$ 12*</span></div><p>Doce de vitrine para levar ou acompanhar um café.</p><small>Exemplo demonstrativo</small></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="brunch" data-category="brunch" aria-labelledby="brunch-title">
+          <div class="menu-section__heading"><span class="menu-section__no">03</span><div><p class="eyebrow">PARA COMEÇAR DEVAGAR</p><h2 id="brunch-title">Brunch &amp; café da manhã</h2></div><p class="menu-section__note">Sugestões criadas para esta apresentação.</p></div>
+          <div class="menu-items">
+            <article class="menu-item"><div class="menu-item__title"><h3>Brunch Botané</h3><span>R$ 48*</span></div><p>Pães, fruta da estação e acompanhamentos da casa.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Torrada de raízes</h3><span>R$ 32*</span></div><p>Pão artesanal com vegetais assados e ervas frescas.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Panquecas da estação</h3><span>R$ 35*</span></div><p>Frutas frescas e um toque doce da cozinha.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Seleção de pães</h3><span>R$ 28*</span></div><p>Pães e pequenos acompanhamentos para compartilhar.</p><small>Exemplo demonstrativo</small></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="almoco" data-category="almoco" aria-labelledby="almoco-title">
+          <div class="menu-section__heading"><span class="menu-section__no">04</span><div><p class="eyebrow">COZINHA DE RAIZ</p><h2 id="almoco-title">Almoço &amp; estação</h2></div><p class="menu-section__note">A disponibilidade acompanha a estação.</p></div>
+          <div class="menu-items">
+            <article class="menu-item menu-item--photo"><img src="public/images/menu-lunch.jpg" alt="Salada de folhas e vegetais da estação" loading="lazy" /><div class="menu-item__body"><div class="menu-item__title"><h3>Prato da estação</h3><span>R$ 54*</span></div><p>Uma sugestão ilustrativa com ingredientes frescos e locais.</p><small>Exemplo demonstrativo</small></div></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Clássico Botané</h3><span>R$ 49*</span></div><p>Uma ideia de prato afetivo para o menu de almoço.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Menu vegetal</h3><span>R$ 46*</span></div><p>Vegetais, grãos e ervas reunidos em uma receita leve.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Doce do dia</h3><span>R$ 17*</span></div><p>Uma sobremesa para fechar o almoço com calma.</p><small>Exemplo demonstrativo</small></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="especialidades" data-category="especialidades" aria-labelledby="special-title">
+          <div class="menu-section__heading"><span class="menu-section__no">05</span><div><p class="eyebrow">FEITO COM CARINHO</p><h2 id="special-title">Especialidades da casa</h2></div><p class="menu-section__note">Receitas e ingredientes da região.</p></div>
+          <div class="menu-items">
+            <article class="menu-item"><div class="menu-item__title"><h3>Bolo de amêndoas</h3><span>R$ 19*</span></div><p>Feito com farinha de amêndoas; opção sem glúten citada no site oficial.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Receita de raiz</h3><span>R$ 24*</span></div><p>Uma preparação afetiva, sem ingredientes ultraprocessados.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Seleção da vitrine</h3><span>R$ 26*</span></div><p>Pães, bolos e doces escolhidos no dia.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Novidade sazonal</h3><span>R$ 22*</span></div><p>Uma receita que acompanha os ingredientes disponíveis.</p><small>Exemplo demonstrativo</small></article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="catering-menu" data-category="catering-menu" aria-labelledby="catering-menu-title">
+          <div class="menu-section__heading"><span class="menu-section__no">06</span><div><p class="eyebrow">PARA COMPARTILHAR</p><h2 id="catering-menu-title">Catering &amp; eventos</h2></div><p class="menu-section__note">Menus personalizados, sob consulta.</p></div>
+          <div class="menu-items">
+            <article class="menu-item"><div class="menu-item__title"><h3>Mesa Botané</h3><span>R$ 85*</span></div><p>Proposta ilustrativa por pessoa; menu e valor variam por evento.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Menu para celebrar</h3><span>R$ 120*</span></div><p>Composição demonstrativa com serviço, louças e decoração.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Encontro corporativo</h3><span>R$ 98*</span></div><p>Exemplo de proposta personalizada para compartilhar.</p><small>Exemplo demonstrativo</small></article>
+            <article class="menu-item"><div class="menu-item__title"><h3>Menu autoral</h3><span>Sob consulta</span></div><p>A Botané prepara menus exclusivos para eventos.</p><small>Consulte a equipe</small></article>
+          </div>
+        </section>
+      </div>
+
+      <section class="menu-cta" aria-labelledby="menu-cta-title"><p class="eyebrow">INGREDIENTES DA ESTAÇÃO, SEM PRESSA</p><h2 id="menu-cta-title">A melhor surpresa está<br /><em>na vitrine de hoje.</em></h2><p>Os pratos mudam com a estação e a disponibilidade dos ingredientes.</p><a class="button button--cream" href="https://wa.me/5547992079897?text=Olá%2C%20quero%20saber%20o%20que%20está%20disponível%20hoje." target="_blank" rel="noreferrer">Pergunte o que tem hoje <span aria-hidden="true">→</span></a><span class="menu-cta__ornament" aria-hidden="true">✳</span></section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="index.html">Botané <span>DELI · CAFÉ · COMIDA DE RAIZ</span></a><p>Botané Deli e Café <span>·</span> Blumenau, SC</p><a class="footer-email" href="mailto:info@botanedeliecafe.com.br">info@botanedeliecafe.com.br</a><span class="footer-rule" aria-hidden="true"></span><a class="footer-top" href="#conteudo">Voltar ao início ↑</a></footer>
+  </body>
+</html>
